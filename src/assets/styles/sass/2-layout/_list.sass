@@ -1,0 +1,48 @@
+@use "../1-base/_variables"
+
+.list
+    display: flex
+    flex-direction: column
+
+    &__field
+        width: 100%
+        display: flex
+        justify-content: center
+        gap: 0.5rem
+        height: 55px
+
+        &--input
+            padding: 0 1rem
+            background-color: variables.$gray-500
+            border-radius: 10px
+            width: 100%
+            border: none
+            color: variables.$gray-100
+
+    
+
+    &__header
+        display: flex
+        justify-content: space-between
+        padding-top: 24px
+
+
+        span
+            background-color: variables.$gray-300
+            padding: .2rem .4rem
+            border-radius: 180px
+            font-size: 0.8rem
+
+        .create 
+            color: variables.$blue
+            font-weight: bold
+            font-size: 0.875rem
+
+        .completed
+            color: variables.$purple
+            font-weight: bold
+            font-size: 0.875rem
+
+
+
+

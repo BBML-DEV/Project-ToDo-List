@@ -1,0 +1,22 @@
+@use "../1-base/_variables"
+
+.contentTask
+    background-color: variables.$gray-500
+    border-radius: 10px
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 24px
+    padding: 1rem
+
+    &__text
+        font-size: 0.875rem
+
+        .normalItem
+            transition: color 0.1s
+            cursor: pointer
+
+        .selectedItem
+            text-decoration: line-through
+            color: variables.$gray-300

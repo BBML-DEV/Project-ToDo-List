@@ -1,0 +1,53 @@
+@use "../1-base/_variables"
+
+.btn
+    color: variables.$gray-100
+    background-color: variables.$blue-dark
+    border: none
+    padding: 0rem 1rem
+    border-radius: 10px
+    cursor: pointer
+    font-weight: bold
+    transition: .5s
+    display: flex
+    align-items: center
+    gap: .2rem
+    &:hover
+        background-color: variables.$blue
+        color: variables.$white
+
+    &__normal
+        background-color: transparent
+        color: variables.$blue
+        cursor: pointer
+        border-radius: 50%
+        padding: .4rem
+        border: 2px solid variables.$blue
+
+
+    &__delete
+        border: none
+        background-color: transparent
+        color: variables.$gray-300
+        transition: .5s
+        cursor: pointer
+
+        &:hover
+            color: variables.$orange
+
+    &__check
+        border-radius: 50%
+        padding: .4rem
+        border: none
+        background: variables.$purple
+        display: flex
+        align-items: center
+        justify-content: center
+        
+
+.invisible
+    display: none
+
+.visible
+    display: hidden
+        
